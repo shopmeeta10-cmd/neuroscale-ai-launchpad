@@ -14,8 +14,7 @@ const Footer = () => {
   const quickLinks = [
     { label: "Início", href: "#home" },
     { label: "Serviços", href: "#services" },
-    { label: "Sobre", href: "#about" },
-    { label: "Casos de Sucesso", href: "#cases" }
+    { label: "Sobre", href: "#about" }
   ];
 
   const services = [
@@ -41,7 +40,11 @@ const Footer = () => {
               transformar sua empresa em poucos dias.
             </p>
             
-            <Button size="lg" className="gradient-primary hover-glow transition-spring group">
+            <Button 
+              size="lg" 
+              className="gradient-primary hover-glow transition-spring group"
+              onClick={() => window.open('https://wa.me/5586994479770?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20conversar%20sobre%20IA%20para%20meu%20neg%C3%B3cio%21', '_blank')}
+            >
               <MessageCircle className="w-5 h-5 mr-2" />
               Falar com WhatsApp
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-smooth" />
@@ -54,9 +57,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="space-y-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <Zap className="w-5 h-5 text-primary-foreground" />
-              </div>
+              <img src="/lovable-uploads/b759e060-9777-4d43-9e71-eebacb9efe77.png" alt="NeuroScale" className="w-8 h-8" />
               <span className="text-xl font-bold">NeuroScale</span>
             </div>
             
@@ -69,7 +70,12 @@ const Footer = () => {
               <Button variant="outline" size="sm" className="border-primary/30 hover:bg-primary/10">
                 <Linkedin className="w-4 h-4" />
               </Button>
-              <Button variant="outline" size="sm" className="border-primary/30 hover:bg-primary/10">
+              <Button 
+                variant="outline" 
+                size="sm" 
+                className="border-primary/30 hover:bg-primary/10"
+                onClick={() => window.open('https://www.instagram.com/neuroscale.ai/', '_blank')}
+              >
                 <Instagram className="w-4 h-4" />
               </Button>
             </div>

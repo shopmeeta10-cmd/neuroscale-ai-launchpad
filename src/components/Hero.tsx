@@ -53,9 +53,14 @@ const Hero = () => {
                 Automatizar Meu Negócio
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>
-              <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10 transition-smooth">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/30 hover:bg-primary/10 transition-smooth"
+                onClick={() => window.open('https://wa.me/5586994479770?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20conversar%20sobre%20IA%20para%20meu%20neg%C3%B3cio%21', '_blank')}
+              >
                 <Bot className="w-5 h-5 mr-2" />
-                Ver Casos de Sucesso
+                Vamos Conversar
               </Button>
             </div>
           </div>

@@ -9,7 +9,6 @@ const Header = () => {
     { label: "Início", href: "#home" },
     { label: "Serviços", href: "#services" },
     { label: "Sobre", href: "#about" },
-    { label: "Casos de Sucesso", href: "#cases" },
     { label: "Contato", href: "#contact" }
   ];
 
@@ -19,9 +18,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <Zap className="w-5 h-5 text-primary-foreground" />
-            </div>
+            <img src="/lovable-uploads/b759e060-9777-4d43-9e71-eebacb9efe77.png" alt="NeuroScale" className="w-8 h-8" />
             <span className="text-xl font-bold">NeuroScale</span>
           </div>
 
@@ -40,7 +37,12 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="outline" size="sm" className="border-primary/30 hover:bg-primary/10">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="border-primary/30 hover:bg-primary/10"
+              onClick={() => window.open('https://wa.me/5586994479770?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20conversar%20sobre%20IA%20para%20meu%20neg%C3%B3cio%21', '_blank')}
+            >
               <MessageCircle className="w-4 h-4 mr-2" />
               Vamos Conversar
             </Button>
@@ -69,7 +71,10 @@ const Header = () => {
                   {item.label}
                 </a>
               ))}
-              <Button className="gradient-primary mt-4">
+              <Button 
+                className="gradient-primary mt-4"
+                onClick={() => window.open('https://wa.me/5586994479770?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20queria%20conversar%20sobre%20IA%20para%20meu%20neg%C3%B3cio%21', '_blank')}
+              >
                 <MessageCircle className="w-4 h-4 mr-2" />
                 Vamos Conversar
               </Button>
