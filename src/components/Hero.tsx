@@ -49,7 +49,11 @@ const Hero = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button size="lg" className="gradient-primary hover-glow transition-spring group">
+              <Button 
+                size="lg" 
+                className="gradient-primary hover-glow transition-spring group"
+                onClick={() => window.open('https://wa.me/5586994479770?text=Quero%20automatizar%20meu%20neg%C3%B3cio', '_blank')}
+              >
                 Automatizar Meu Negócio
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>

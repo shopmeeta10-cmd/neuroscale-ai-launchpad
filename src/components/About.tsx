@@ -124,7 +124,12 @@ const About = () => {
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-smooth" />
               </Button>
               
-              <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/10">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="border-primary/30 hover:bg-primary/10"
+                onClick={() => window.open('https://wa.me/5586994479770?text=Quero%20conversar%20sobre%20solu%C3%A7%C3%A3o%20personalizada', '_blank')}
+              >
                 Falar com especialista
               </Button>
             </div>

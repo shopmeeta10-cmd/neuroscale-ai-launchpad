@@ -135,7 +135,11 @@ const Services = () => {
               qualquer tipo de negócio. Vamos conversar sobre suas necessidades específicas.
             </p>
             
-            <Button size="lg" className="gradient-primary hover-glow transition-spring">
+            <Button 
+              size="lg" 
+              className="gradient-primary hover-glow transition-spring"
+              onClick={() => window.open('https://wa.me/5586994479770?text=Quero%20conversar%20sobre%20solu%C3%A7%C3%A3o%20personalizada', '_blank')}
+            >
               <Zap className="w-5 h-5 mr-2" />
               Criar Solução Personalizada
             </Button>
