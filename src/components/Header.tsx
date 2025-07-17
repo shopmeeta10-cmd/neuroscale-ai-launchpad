@@ -18,7 +18,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="/lovable-uploads/b759e060-9777-4d43-9e71-eebacb9efe77.png" alt="NeuroScale" className="w-8 h-8" />
+            <img src="/lovable-uploads/e6b148a9-8e5a-4e2b-a433-41a59bc8819b.png" alt="NeuroScale" className="w-8 h-8" />
             <span className="text-xl font-bold">NeuroScale</span>
           </div>
 
